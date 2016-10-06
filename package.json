@@ -1,0 +1,30 @@
+{
+  "name": "itx-file-template",
+  "main": "./lib/itx-file-template",
+  "version": "0.0.0",
+  "description": "A short description of your package",
+  "keywords": [
+  ],
+  "activationCommands": {
+    ".tree-view .selected": "itx-file-template:create-files-from-template",
+    "atom-workspace": [
+      "itx-file-template:toggle",
+      "itx-file-template:open-temlates-folder",
+      "itx-file-template:open-temlates-folder-in-atom"
+    ]
+
+  },
+  "repository": "https://github.com/atom/itx-file-template",
+  "license": "MIT",
+  "engines": {
+    "atom": ">=1.0.0 <2.0.0"
+  },
+  "dependencies": {
+    "atom-space-pen-views": "^2.1.0",
+    "fs-extra": "^0.26.2",
+    "fs-plus": "^2.8.1",
+    "loophole": "^1.1.0",
+    "space-pen": "^5.1.1",
+    "underscore": "^1.8.3"
+  }
+}

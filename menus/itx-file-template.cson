@@ -1,0 +1,20 @@
+# See https://atom.io/docs/latest/hacking-atom-package-word-count#menus for more details
+'context-menu':
+  '.tree-view .selected': [
+    {
+      'label': 'Create files from template',
+      'command': 'itx-file-template:create-files-from-template'
+    }
+  ]
+'menu': [
+  {
+    'label': 'Packages'
+    'submenu': [
+      'label': 'itx-file-template'
+      'submenu': [
+        { 'label': 'Open templates folder', 'command': 'itx-file-template:open-temlates-folder'},
+        { 'label': 'Open templates folder in Atom', 'command': 'itx-file-template:open-temlates-folder-in-atom'}
+      ]
+    ]
+  }
+]
